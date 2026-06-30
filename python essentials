@@ -1,0 +1,55 @@
+########################## Process of creating Python Virtual Environment ##########################
+
+python -m venv .venv
+.venv\Scripts\activate
+
+
+
+########################## Process of creating requirements.txt and installing the packages ##########################
+
+Create requirements.txt file
+pip install -r requirements.txt
+deactivate ---> just write to deactivate
+
+
+To install a package :
+pip install <package-name>
+
+To delete an installed package :
+pip uninstall <package-name>
+
+
+
+########################## Pushing a new file to GitHub ##########################
+git init
+
+** Create a .gitignore file. Inside .gitignore file place .venv/ and __pycache__/
+
+git add .
+
+git commit -m "Initial commit"
+
+git remote add origin https://github.com/YourUsername/YourRepo.git
+
+git branch -M <branch-name>
+
+
+
+########################## Making changes and pushing it in Github ##########################
+
+Do not start commanding from venv.
+
+git add .
+
+git commit -m "Commit what changes are done."
+
+git push origin <Branch-name>
+
+
+
+########################## Downloading project from GitHub using command ##########################
+Make sure to navigate the terminal to the folder where you want to clone the project.
+
+git clone https://github.com/YOUR-USERNAME/YOUR-REPO-NAME.git .
+
+git checkout AI-Chatbot
